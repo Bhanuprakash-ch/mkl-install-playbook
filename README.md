@@ -1,22 +1,18 @@
 # mkl-install-playbook
 
-1. install the mkl install role
+1. Install the mkl-install role.
 
 ```
 [sudo] ansible-galaxy install -r requirements.yml --ignore-errors
 ```
 
-2. Update the hosts variable in the sample [cdh.yml](cdh.yml) file.
+2. Update the hosts file [hosts](hosts) with the hostnames that need mkl.
 ```
----
-- hosts: YOURHOSTS
-  become: yes
-  become_user: root
-  roles:
-  - { role: mkl-install-role } 
+[YOURHOSTS]
+localhost
 ```
 
 3. Run playbook
 ```
-ansible-playbook mkl.yml
+ansible-playbook --inventory hosts mkl.yml
 ```
