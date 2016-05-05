@@ -1,0 +1,6 @@
+---
+- hosts: YOURHOSTS
+  become: yes
+  become_user: root
+  roles:
+  - { role: mkl-install-role } 
