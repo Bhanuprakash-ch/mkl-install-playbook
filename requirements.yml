@@ -2,4 +2,4 @@
 - name: mkl-install-role
   src: https://github.com/trustedanalytics/mkl-install-role.git
   scm: git
-  version: ansiblev1.9.0.1-5
+  version: ansiblev1.9.0.1-6
