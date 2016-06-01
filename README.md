@@ -7,7 +7,7 @@ sudo yum install wget libffi-devel python-devel python-pip python-setuptools gmp
 
 -1. Install ansible
 ```
-sudo pip install ansibl==1.9.4
+sudo pip install -U ansible==1.9.4
 ```
 
 -2. Clone and cd into repository
