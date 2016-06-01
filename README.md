@@ -1,12 +1,27 @@
 # mkl-install-playbook
 
-1. Install the mkl-install role.
+0. install required packages for ansible
+```
+sudo yum install wget libffi-devel python-devel python-pip python-setuptools gmp-devel
+```
+
+1. Install ansible
+```
+sudo pip install ansibl==1.9.4
+```
+
+2. Clone and cd into repository
+```
+git clone https://github.com/trustedanalytics/mkl-install-playbook.git && cd mkl-install-playbook
+```
+
+3. Install the mkl-install role.
 
 ```
-[sudo] ansible-galaxy install -r requirements.yml --ignore-errors
+sudo ansible-galaxy install -r requirements.yml
 ```
 
-2. Update the hosts file [hosts](hosts) with the hostnames that need mkl.
+4. Update the hosts file [hosts](hosts) with the hostnames that need mkl.
 ```
 [YOURHOSTS]
 localhost
