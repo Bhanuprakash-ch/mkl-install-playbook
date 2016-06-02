@@ -2,7 +2,7 @@
 
 -0. install required packages for ansible
 ```
-sudo yum install wget libffi-devel python-devel python-pip python-setuptools gmp-devel
+sudo yum install wget libffi-devel python-devel python-pip python-setuptools gmp-devel && sudo pip install -U setuptools
 ```
 
 -1. Install ansible
@@ -12,7 +12,7 @@ sudo pip install -U ansible==1.9.4
 
 -2. Clone and cd into repository
 ```
-git clone https://github.com/trustedanalytics/mkl-install-playbook.git && cd mkl-install-playbook
+git clone https://github.com/trustedanalytics/mkl-install-playbook.git --branch ansiblev1.9.0.1 && cd mkl-install-playbook
 ```
 
 -3. Remove old mkl install role.
